@@ -45,10 +45,10 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="bg-[#ffffff] dark:bg-gray-800  min-h-screen py-[60px]">
+  <div class="bg-[#ffffff] dark:bg-gray-800 min-h-screen py-[60px]">
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
       <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="https://tc.qianying888.com/app/hide.php?key=cEpMNWhiZEdSRXhvM2lrWEV0aTNBV24wTk1rWVNvbE4=" alt="logo">
-      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">灵梦-最强网盘资源搜索引擎</h1>
+      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white">灵梦-最强网盘资源搜索引擎</h1>
     </div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
       <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap-2 relative">
@@ -63,18 +63,21 @@ onMounted(async () => {
         </button>
       </div>
     </div>
-    <div class="mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]" v-if="doubanData.length > 0">
-      <h1 class="text-[12px] sm:text-sm text-slate-600 font-bold dark:text-white mt-[20px]">热门榜单</h1>
-      <div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-8  gap-3  mt-[10px]">
-        <div
-          class="mx-1 cursor-pointer truncate text-xs font-bold dark:bg-slate-700 dark:text-slate-100 rounded-[5px] p-2 transition-transform duration-300 hover:scale-105"
-          v-for="(movie, index) in doubanData" :key="index" type="info" @click="goDouban(movie)">
-          <img class="w-full h-[180px] lg:h-[220px] xl:h-[161px] rounded-[5px] object-cover"
-            :src="'https://images.weserv.nl/?url=' + movie.cover" alt="" referrerpolicy="never">
-          <p class="mt-1  text-center truncate">
-            {{ movie.title }}
-            {{ movie.rate }}
-          </p>
+    <div class="mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card">
+          <h2 class="card-title">欢迎来到</h2>
+          <p class="card-text">在这里没有你搜索不到的资源</p>
+          <p class="card-text">禁止黄！堵！毒！</p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">资源反馈</h2>
+          <p class="card-text">如果遇到没有的资源请联系QQ：362856178</p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">告知</h2>
+          <p class="card-text">全部网盘资源均来自网络</p>
+          <p class="card-text">如侵权请告知联系QQ删除</p>
         </div>
       </div>
     </div>
@@ -87,5 +90,28 @@ onMounted(async () => {
 }
 .border-gray-300 {
   border: 1px dashed #09afe899!important;
-  }
+}
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #09afe8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.card-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
 </style>
