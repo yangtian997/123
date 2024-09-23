@@ -143,4 +143,20 @@ onMounted(async () => {
   color: #ffffff;
   text-shadow: 2px 2px 0 #000,0px 0px 0 #000,1px 4px 0 #000;
 }
+.el-input--small .el-input__wrapper {
+  border-radius: 10001px !important;
+}
+.el-input__wrapper {
+  border: 1px dashed #09afe899!important;
+}
+.el-button, .el-button.is-round {
+  border-radius: 10001px !important;
+}
+.rounded-\[6px\] {
+  border-radius: 10001px !important;
+}
+.gap-2 {
+border-radius: 10001px !important;
+}
+  
 </style>
