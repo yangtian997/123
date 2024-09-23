@@ -63,21 +63,17 @@ onMounted(async () => {
         </button>
       </div>
     </div>
-    <div class="mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[20px]">
-        <div class="bg-white shadow-lg rounded-[5px] p-6 text-center">
-          <h2 class="text-[22px] font-bold" style="color: #09afe899;">欢迎来到</h2>
-          <p class="mt-4 text-[16px] font-bold">在这里没有你搜索不到的资源</p>
-          <p class="mt-2 text-[16px] font-bold">禁止黄！堵！毒！</p>
-        </div>
-        <div class="bg-white shadow-lg rounded-[5px] p-6 text-center">
-          <h2 class="text-[22px] font-bold" style="color: #09afe899;">资源反馈</h2>
-          <p class="mt-4 text-[16px] font-bold">如果遇到没有的资源请联系QQ：362856178</p>
-        </div>
-        <div class="bg-white shadow-lg rounded-[5px] p-6 text-center">
-          <h2 class="text-[22px] font-bold" style="color: #09afe899;">告知</h2>
-          <p class="mt-4 text-[16px] font-bold">全部网盘资源均来自网络</p>
-          <p class="mt-2 text-[16px] font-bold">如侵权请告知联系QQ删除</p>
+    <div class="mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]" v-if="doubanData.length > 0">
+      
+        <div
+          class="mx-1 cursor-pointer truncate text-xs font-bold dark:bg-slate-700 dark:text-slate-100 rounded-[5px] p-2 transition-transform duration-300 hover:scale-105"
+          v-for="(movie, index) in doubanData" :key="index" type="info" @click="goDouban(movie)">
+          <img class="w-full h-[180px] lg:h-[220px] xl:h-[161px] rounded-[5px] object-cover"
+            :src="'https://images.weserv.nl/?url=' + movie.cover" alt="" referrerpolicy="never">
+          <p class="mt-1  text-center truncate">
+            {{ movie.title }}
+            {{ movie.rate }}
+          </p>
         </div>
       </div>
     </div>
@@ -90,11 +86,5 @@ onMounted(async () => {
 }
 .border-gray-300 {
   border: 1px dashed #09afe899!important;
-}
-.bg-white {
-  background-color: #ffffff;
-}
-.shadow-lg {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+  }
 </style>
