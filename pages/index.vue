@@ -48,7 +48,7 @@ onMounted(async () => {
   <div class="bg-[#ffffff] dark:bg-gray-800 min-h-screen py-[60px]">
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
       <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="https://tc.qianying888.com/app/hide.php?key=cEpMNWhiZEdSRXhvM2lrWEV0aTNBV24wTk1rWVNvbE4=" alt="logo">
-      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white">灵梦-最强网盘资源搜索引擎</h1>
+      <h1 class="title-text">灵梦-最强网盘资源搜索引擎</h1>
     </div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
       <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap-2 relative">
@@ -136,5 +136,11 @@ onMounted(async () => {
   color: #333;
   font-weight: bold;
   margin-top: 10px;
+}
+.title-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 4px 4px 0 #000000, -4px -4px 0 #000000, 4px -4px 0 #000000, -4px 4px 0 #000000;
 }
 </style>
