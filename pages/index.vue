@@ -63,20 +63,6 @@ onMounted(async () => {
         </button>
       </div>
     </div>
-    <div class="mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]" v-if="doubanData.length > 0">
-      
-        <div
-          class="mx-1 cursor-pointer truncate text-xs font-bold dark:bg-slate-700 dark:text-slate-100 rounded-[5px] p-2 transition-transform duration-300 hover:scale-105"
-          v-for="(movie, index) in doubanData" :key="index" type="info" @click="goDouban(movie)">
-          <img class="w-full h-[180px] lg:h-[220px] xl:h-[161px] rounded-[5px] object-cover"
-            :src="'https://images.weserv.nl/?url=' + movie.cover" alt="" referrerpolicy="never">
-          <p class="mt-1  text-center truncate">
-            {{ movie.title }}
-            {{ movie.rate }}
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
