@@ -85,4 +85,7 @@ onMounted(async () => {
 :deep(.el-input__wrapper.is-focus) {
   --el-input-focus-border-color: #6648ff;
 }
+.border-gray-300 {
+  border: 1px dashed #09afe899;!important;
+  }
 </style>
