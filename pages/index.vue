@@ -67,7 +67,7 @@ onMounted(async () => {
       <div class="card">
         <h2>欢迎来到</h2>
         <p>在这里没有你搜索不到的资源</p>
-        <p>禁止黄！堵！毒！</p>
+        <p>禁止黄！赌！毒！</p>
       </div>
       <div class="card">
         <h2>资源反馈</h2>
@@ -126,13 +126,13 @@ onMounted(async () => {
   transform: translateY(-10px);
 }
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #09afe899;
   font-weight: bold;
   text-shadow: 1px 1px 2px #fff;
 }
 .card p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #333;
   font-weight: bold;
   margin-top: 10px;
@@ -141,6 +141,6 @@ onMounted(async () => {
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 4px 4px 0 #000000, -4px -4px 0 #000000, 4px -4px 0 #000000, -4px 4px 0 #000000;
+  text-shadow: 2px 2px 0 #000,0px 0px 0 #000,1px 4px 0 #000;
 }
 </style>
