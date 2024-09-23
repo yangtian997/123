@@ -11,7 +11,7 @@ const goHome = () => {
     <div class="shadow px-[20px] py-[10px] backdrop-blur bg-white/70 dark:bg-gray-800">
       <div class="max-w-[1240px] mx-auto h-[40px]  flex flex-row items-center justify-between">
         <div class="flex flex-row items-center justify-center gap-1">
-          <img class="w-[40px] h-[40px] cursor-pointer" src="@/assets/my-logo.png" alt="logo" @click="goHome()">
+          <img class="w-[40px] h-[40px] cursor-pointer" src="https://tc.qianying888.com/app/hide.php?key=cEpMNWhiZEdSRXhvM2lrWEV0aTNBV24wTk1rWVNvbE4=" @click="goHome()">
           <h1 class="text-[14px] font-serif font-bold cursor-pointer dark:text-white" @click="goHome()">灵梦-网盘资源搜索</h1>
         </div>
         <client-only>
