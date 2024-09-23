@@ -51,7 +51,7 @@ onMounted(async () => {
       <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">灵梦-最强网盘资源搜索引擎</h1>
     </div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
-      <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap-2 relative">
+      <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap2 relative">
         <input class="w-full pl-6 pr-[60px] py-3 border border-gray-300 rounded-full text-sm" v-model="searchKeyword"
           placeholder="请输入关键词搜索" @keydown.enter="search(searchKeyword)" />
         <button type="button"
@@ -63,6 +63,21 @@ onMounted(async () => {
         </button>
       </div>
     </div>
+    <div class="hidden-section mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]" v-if="doubanData.length > 0">
+      <h1 class="text-[12px] sm:text-sm text-slate-600 font-bold dark:text-white mt-[20px]">热门榜单</h1>
+      <div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-8  gap-3  mt-[10px]">
+        <div
+          class="mx-1 cursor-pointer truncate text-xs font-bold dark:bg-slate-700 dark:text-slate-100 rounded-[5px] p-2 transition-transform duration-300 hover:scale-105"
+          v-for="(movie, index) in doubanData" :key="index" type="info" @click="goDouban(movie)">
+          <img class="w-full h-[180px] lg:h-[220px] xl:h-[161px] rounded-[5px] object-cover"
+            :src="'https://images.weserv.nl/?url=' + movie.cover" alt="" referrerpolicy="never">
+          <p class="mt-1  text-center truncate">
+            {{ movie.title }}
+            {{ movie.rate }}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -72,5 +87,8 @@ onMounted(async () => {
 }
 .border-gray-300 {
   border: 1px dashed #09afe899!important;
-  }
+}
+.hidden-section {
+  display: none;
+}
 </style>
