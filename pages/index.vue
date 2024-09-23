@@ -47,7 +47,7 @@ onMounted(async () => {
 <template>
   <div class="bg-[#ffffff] dark:bg-gray-800  min-h-screen py-[60px]">
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
-      <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="@/assets/my-logo.png" alt="logo">
+      <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="https://tc.qianying888.com/app/hide.php?key=cEpMNWhiZEdSRXhvM2lrWEV0aTNBV24wTk1rWVNvbE4=" alt="logo">
       <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">灵梦-网盘资源搜索</h1>
     </div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
