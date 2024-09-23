@@ -45,13 +45,13 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="bg-[#ffffff] dark:bg-gray-800  min-h-screen py-[60px]">
+  <div class="bg-[#ffffff] dark:bg-gray-800 min-h-screen py-[60px]">
     <div class="flex flex-row items-center justify-center gap-3 mt-[80px]">
       <img class="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]" src="https://tc.qianying888.com/app/hide.php?key=cEpMNWhiZEdSRXhvM2lrWEV0aTNBV24wTk1rWVNvbE4=" alt="logo">
-      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white ">灵梦-最强网盘资源搜索引擎</h1>
+      <h1 class="text-[18px] sm:text-[22px] font-serif font-bold dark:text-white">灵梦-最强网盘资源搜索引擎</h1>
     </div>
     <div class="max-w-[1240px] mx-auto mt-[20px]">
-      <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap2 relative">
+      <div class="w-[80%] md:w-[700px] mx-auto flex flex-row items-center gap-2 relative">
         <input class="w-full pl-6 pr-[60px] py-3 border border-gray-300 rounded-full text-sm" v-model="searchKeyword"
           placeholder="请输入关键词搜索" @keydown.enter="search(searchKeyword)" />
         <button type="button"
@@ -61,6 +61,22 @@ onMounted(async () => {
             <Search></Search>
           </el-icon>
         </button>
+      </div>
+    </div>
+    <div class="card-container max-w-[1240px] mx-auto mt-[40px] flex flex-col md:flex-row justify-center items-center gap-6">
+      <div class="card">
+        <h2>欢迎来到</h2>
+        <p>在这里没有你搜索不到的资源</p>
+        <p>禁止黄！堵！毒！</p>
+      </div>
+      <div class="card">
+        <h2>资源反馈</h2>
+        <p>如果遇到没有的资源请联系QQ：362856178</p>
+      </div>
+      <div class="card">
+        <h2>告知</h2>
+        <p>全部网盘资源均来自网络</p>
+        <p>如侵权请告知联系QQ删除</p>
       </div>
     </div>
     <div class="hidden-section mx-5 xl:max-w-[1200px] xl:mx-auto mt-12 mb-[100px]" v-if="doubanData.length > 0">
@@ -90,5 +106,35 @@ onMounted(async () => {
 }
 .hidden-section {
   display: none;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h2 {
+  font-size: 1.5rem;
+  color: #09afe899;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #fff;
+}
+.card p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
 }
 </style>
