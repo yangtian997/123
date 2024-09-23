@@ -1,5 +1,5 @@
 <script setup>
-import { useDoubanStore } from "~/stores/douban";
+import { useDoubanStore } from "~//douban";
 import { badWords } from "~/utils/sensitiveWords";
 
 definePageMeta({
@@ -29,7 +29,6 @@ watch(doubanData, (newValue, oldValue) => {
 const colorMode = useColorMode()
 
 const goDouban = (movie) => {
-  // window.open(movie.url, '_blank')
   router.push({ path: '/search', query: { keyword: encodeURIComponent(movie.title) } })
 }
 
