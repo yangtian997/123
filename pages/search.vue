@@ -122,22 +122,22 @@ onMounted(() => {
 </template>
 
 <style scoped>
-  .el-input--small .el-input__wrapper {
+/deep/ .el-input--small .el-input__wrapper {
   border-radius: 10001px !important;
 }
-.el-input__wrapper {
-  border: 1px dashed #09afe899!important;
+::v-deep .el-input__wrapper {
+  border: 1px dashed #09afe899 !important;
 }
-button, input, optgroup, select, textarea {
-  border-radius: 50px!important;
+::v-deep button, ::v-deep input, ::v-deep optgroup, ::v-deep select, ::v-deep textarea {
+  border-radius: 50px !important;
 }
-input {
-  border-radius: 40px!important;
-  }
-.flex-col {
-  border-radius: 40px!important;
+::v-deep input {
+  border-radius: 40px !important;
 }
-.gap-2 {
-border-radius: 50px;
+::v-deep .flex-col {
+  border-radius: 40px !important;
+}
+::v-deep .gap-2 {
+  border-radius: 50px;
 }
 </style>
