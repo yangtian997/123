@@ -122,5 +122,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
+.transition {
+  border-radius: 40px!important;
+}
 </style>
