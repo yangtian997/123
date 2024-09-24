@@ -131,8 +131,7 @@ onMounted(() => {
 button, input, optgroup, select, textarea {
   border-radius: 50px!important;
 }
-.flex {
-  display: flex;
+.rounded {
   border-radius: 40px!important;
 }
 .gap-2 {
