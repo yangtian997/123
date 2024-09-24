@@ -126,6 +126,7 @@ onMounted(() => {
   border-radius: 10001px !important;
 }
 ::v-deep .el-input__wrapper {
+  box-shadow: none;
   border: 1px dashed #09afe899 !important;
 }
 ::v-deep button, ::v-deep input, ::v-deep optgroup, ::v-deep select, ::v-deep textarea {
