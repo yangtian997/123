@@ -143,20 +143,6 @@ onMounted(async () => {
   color: #ffffff;
   text-shadow: 2px 2px 0 #000,0px 0px 0 #000,2px -1px 0 #000;
 }
-.el-input--small .el-input__wrapper {
-  border-radius: 10001px !important;
-}
-.el-input__wrapper {
-  border: 1px dashed #09afe899!important;
-}
-button, input, optgroup, select, textarea {
-  border-radius: 50px!important;
-}
-.rounded-\[6px\] {
-  border-radius: 50px;
-}
-.gap-2 {
-border-radius: 50px;
-}
+
   
 </style>
