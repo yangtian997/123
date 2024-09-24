@@ -148,7 +148,7 @@ onMounted(async () => {
     padding: 8px;
     width: 351px;
 }
-  ::v-deep .py-\[60px\] {
+  ::v-deep .py {
     padding-bottom: 60px;
     padding-top: 0px;
   }
