@@ -143,6 +143,8 @@ onMounted(async () => {
   color: #ffffff;
   text-shadow: 2px 2px 0 #000,0px 0px 0 #000,2px -1px 0 #000;
 }
-
-  
+@media screen and (max-width: 700px){
+  padding: 8px;
+  width: 351px;
+}
 </style>
