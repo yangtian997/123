@@ -141,7 +141,7 @@ onMounted(async () => {
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: 2px 2px 0 #000,0px 0px 0 #000,2px -1px 0 #000;
+  text-shadow: 1px 0px 4px #000,2px 2px 0 #000,-1px -1px 0 #000;
 }
  @media (max-width: 768px) {
   .card {
