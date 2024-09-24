@@ -121,4 +121,20 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .el-input--small .el-input__wrapper {
+  border-radius: 10001px !important;
+}
+.el-input__wrapper {
+  border: 1px dashed #09afe899!important;
+}
+button, input, optgroup, select, textarea {
+  border-radius: 50px!important;
+}
+.rounded-\[6px\] {
+  border-radius: 50px;
+}
+.gap-2 {
+border-radius: 50px;
+}
+</style>
