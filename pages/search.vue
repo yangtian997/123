@@ -131,8 +131,7 @@ onMounted(() => {
 button, input, optgroup, select, textarea {
   border-radius: 50px!important;
 }
-.ease-in-out {
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
+.transition {
   border-radius: 40px!important;
 }
 .gap-2 {
