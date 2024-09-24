@@ -149,8 +149,8 @@ onMounted(async () => {
 .el-input__wrapper {
   border: 1px dashed #09afe899!important;
 }
-.el-button, .el-button.is-round {
-  border-radius: 50px;
+button, input, optgroup, select, textarea {
+  border-radius: 50px!important;
 }
 .rounded-\[6px\] {
   border-radius: 50px;
